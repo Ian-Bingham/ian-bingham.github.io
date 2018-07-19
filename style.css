@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css?family=Biryani:200');
+
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 20px;
+    font-family: 'Biryani', sans-serif;
+    background: dodgerblue;
+}
+
+.overallWrapper {
+    background: #6ecbfa;
+    padding: 20px;
+    box-shadow: #00759c 0px 0px 10px 1px;
+}
+
+svg {
+    height: 70vh;
+}
+
+.cls-1 {
+    fill: none
+}
+
+.cls-2 {
+    fill: url(#linear-gradient)
+}
+
+.cls-3 {
+    fill: url(#linear-gradient-3)
+}
+
+.cls-4 {
+    opacity: .14;
+    fill: url(#radial-gradient)
+}
+
+.cls-5 {
+    clip-path: url(#clip-path)
+}
+
+.cls-15, .cls-6 {
+    fill: #0794d2
+}
+
+.cls-6, .cls-7, .cls-8 {
+    opacity: .48
+}
+
+.cls-7 {
+    fill: #ec7d10
+}
+
+.cls-8 {
+    fill: #ffbc0a
+}
+
+.cls-9 {
+    clip-path: url(#clip-path-2)
+}
+
+.cls-10 {
+    fill: #cfd2d3
+}
+
+.cls-11, .cls-12 {
+    fill: #e2e2e2
+}
+
+.cls-11 {
+    opacity: .37
+}
+
+.cls-13 {
+    fill: #ededed
+}
+
+.cls-14 {
+    fill: #49494a
+}
+
+.cls-15 {
+    opacity: .68
+}
+
+.cls-16 {
+    fill: #afdee8
+}
+
+h1, h2 {
+    font-weight: bolder;
+}
+
+/*header*/
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 20px;
+}
+
+header div, svg {
+    width: 100%;
+}
+
+h1 {
+    font-size: 2em;
+}
+
+header p {
+    font-size: 1em;
+}
+
+header img {
+    width: 100%;
+    height: 100%;
+}
+
+/*main*/
+main h2 {
+    text-align: center;
+    font-size: 1.5em;
+    margin-top: 50px;
+}
+
+ul {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    list-style: none;
+    justify-content: space-evenly;
+    padding-left: 0;
+}
+
+li {
+    width: 20%;
+    margin: 20px 10px;
+    border-top: solid;
+    border-top-width: 5px;
+    border-color: rebeccapurple;
+    min-width: 200px;
+}
+
+li h3 {
+    font-size: 1.2em;
+    display: inline-block;
+    margin: 10px 0px;
+}
+
+li div {
+    background: mediumpurple;
+    padding: 10px;
+    font-size: 0.75em;
+    height: 87%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+li div :last-child {
+    border-top: solid 2px white;
+    padding-top: 10px;
+}
+
+/*footer*/
+footer {
+    margin-top: 50px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+textarea {
+    height: 15em;
+}
+
+form :last-child {
+    width: 100%;
+    text-align: center;
+    background: mediumpurple;
+    font-family: 'Biryani', sans-serif;
+    font-size: 1.5em;
+}
+
+@media only screen and (max-width: 1100px) {
+    header {
+        flex-direction: column-reverse;
+        /*justify-content: center;*/
+        align-items: center;
+        margin: 5px;
+    }
+
+    header h1 {
+        text-align: center;
+    }
+}
+
+@keyframes moveMan {
+    0% {transform: rotateZ(0) translateX(80px) rotateZ(0);}
+	100% {transform: rotateZ(360deg) translateX(80px) rotateZ(-360deg);}
+}
+
+.man {
+	animation: moveMan 10s infinite reverse linear;
+}
