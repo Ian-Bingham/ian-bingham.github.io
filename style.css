@@ -191,6 +191,10 @@ textarea {
     padding: 5px;
 }
 
+input, textarea {
+    -webkit-appearance: none;
+}
+
 footer h1, input, textarea {
     margin: 5px;
     border: none;
