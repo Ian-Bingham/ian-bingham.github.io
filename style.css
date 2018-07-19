@@ -182,11 +182,13 @@ form {
 
 form > input {
     height: 20px;
+    padding: 5px;
 }
 
 textarea {
     height: 200px;
     resize: none;
+    padding: 5px;
 }
 
 footer h1, input, textarea {
